@@ -12,50 +12,19 @@
         <link rel="stylesheet" href="style.css">
       </head>
       <style>
-#navbar {
-  background-color: #333; /* Black background color */
-  position: fixed; /* Make it stick/fixed */
-  top: 0; /* Stay on top */
-  width: 100%; /* Full width */
-  transition: top 0.3s; /* Transition effect when sliding down (and up) */
-}
-
-/* Style the navbar links */
-#navbar a {
-  float: left;
-  display: block;
-  color: white;
-  text-align: center;
-  padding: 15px;
-  text-decoration: none;
-}
-
-#navbar a:hover {
-  background-color: #ddd;
-  color: black;
-}
-        .header {
-          background-image: url("https://i.ibb.co/554b9wy/noa4starinitial-t.png");
-        }
+     .header {
+        background-image: url("https://i.ibb.co/554b9wy/noa4starinitial-t.png");
+     }
       </style>
       <body>
-      <div id="navbar"></div>
-        <a href="#home">Home</a>
-        <a href="#news">Invite</a>
-        <a href="#contact">Rules of the bot</a>
-      </div>
+        <ul>
+          <li><a href="default.asp">Home</a></li>
+          <li><a href="news.asp">News</a></li>
+          <li><a href="contact.asp">Contact</a></li>
+          <li><a href="about.asp">About</a></li>
+        </ul>
       <div class="header">
         <h1>Helooooooooooooooooooooooooooooooooooooooo</h1>
       </div>
 <script>
-  var prevScrollpos = window.pageYOffset;
-window.onscroll = function() {
-  var currentScrollPos = window.pageYOffset;
-  if (prevScrollpos > currentScrollPos) {
-    document.getElementById("navbar").style.top = "0";
-  } else {
-    document.getElementById("navbar").style.top = "-50px";
-  }
-  prevScrollpos = currentScrollPos;
-}
 </script>
