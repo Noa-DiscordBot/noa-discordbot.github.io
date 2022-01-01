@@ -1,0 +1,54 @@
+        * {
+          padding: 0;
+          margin: 0;
+          box-sizing: border-box
+        }
+
+        body {
+          font-family: Montserrat;
+          scroll-behavior: smooth;
+          width: 100%;
+          color: white;
+          background-color: black;
+        }
+
+        .header {
+          background-color: #5d00ff;
+          padding: 80px;
+          background-repeat: no-repeat;
+        }
+
+        .topnav {
+          overflow: hidden;
+          background-color: #333;
+        }
+
+        .topnav a {
+          float: left;
+          display: block;
+          color: #f2f2f2;
+          text-align: center;
+          padding: 14px 16px;
+          text-decoration: none;
+          font-size: 17px;
+        }
+
+        .topnav a:hover {
+          background-color: #ddd;
+          color: black;
+        }
+
+        .topnav .icon {
+          display: none;
+        }
+
+        @media screen and (max-width: 600px) {
+          .topnav a:not(:first-child) {
+            display: none;
+          }
+
+          .topnav a.icon {
+            float: right;
+            display: block;
+          }
+        }
