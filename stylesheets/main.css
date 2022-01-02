@@ -67,14 +67,17 @@
 
         /* Navigation bar */
 
-        .topnav {
+        .navbar {
           overflow: hidden;
           background-color: #333;
           position: fixed;
+          top: 0;
+          width: 100%;
         }
         
-        .topnav a {
+        .navbar a {
           float: left;
+          display: block;
           color: #f2f2f2;
           text-align: center;
           padding: 14px 16px;
@@ -82,13 +85,14 @@
           font-size: 17px;
         }
         
-        .topnav a:hover {
-          background-color: #ddd;
+        .navbar a:hover {
+          background: #ddd;
           color: black;
           transition: 0.5s
         }
         
-        .topnav a.active {
-          background-color: #04AA6D;
-          color: white;
+        .main {
+          padding: 16px;
+          margin-top: 30px;
+          height: 1500px; /* Used in this example to enable scrolling */
         }
